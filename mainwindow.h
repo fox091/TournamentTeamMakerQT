@@ -19,11 +19,16 @@ public:
 private slots:
     void on_btnSoloAdd_clicked();
 
+    void on_btnDuoAdd_clicked();
+
+    void on_btnBuildTeams_clicked();
+
 private:
     Ui::MainWindow *ui;
     PlayerList pList;
     void addSolo();
     void addDuo();
+    void buildTeams();
 };
 
 #endif // MAINWINDOW_H

@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>520</width>
-    <height>300</height>
+    <width>471</width>
+    <height>320</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -135,13 +135,85 @@
      </property>
     </widget>
    </widget>
+   <widget class="QGroupBox" name="gbBuildTeams">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>140</y>
+      <width>221</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Build Teams</string>
+    </property>
+    <widget class="QLabel" name="lblBuildTeams">
+     <property name="geometry">
+      <rect>
+       <x>20</x>
+       <y>20</y>
+       <width>71</width>
+       <height>16</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Team Size:</string>
+     </property>
+    </widget>
+    <widget class="QLineEdit" name="txtBuildTeams">
+     <property name="geometry">
+      <rect>
+       <x>90</x>
+       <y>20</y>
+       <width>113</width>
+       <height>20</height>
+      </rect>
+     </property>
+    </widget>
+    <widget class="QPushButton" name="btnBuildTeams">
+     <property name="geometry">
+      <rect>
+       <x>130</x>
+       <y>90</y>
+       <width>75</width>
+       <height>23</height>
+      </rect>
+     </property>
+     <property name="text">
+      <string>Build</string>
+     </property>
+    </widget>
+   </widget>
+   <widget class="QGroupBox" name="gbResults">
+    <property name="geometry">
+     <rect>
+      <x>240</x>
+      <y>140</y>
+      <width>221</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="title">
+     <string>Team Results</string>
+    </property>
+    <widget class="QListView" name="lbResults">
+     <property name="geometry">
+      <rect>
+       <x>10</x>
+       <y>20</y>
+       <width>201</width>
+       <height>91</height>
+      </rect>
+     </property>
+    </widget>
+   </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>520</width>
+     <width>471</width>
      <height>21</height>
     </rect>
    </property>

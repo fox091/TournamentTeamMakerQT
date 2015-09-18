@@ -23,3 +23,22 @@ void MainWindow::addSolo() {
     ui->txtSoloAdd->clear();
     ui->txtSoloAdd->setFocus();
 }
+
+void MainWindow::on_btnDuoAdd_clicked() {
+    addDuo();
+}
+
+void MainWindow::addDuo() {
+    pList.AddDuo(ui->txtDuoAdd->text(), ui->txtDuoAdd2->text());
+    ui->txtDuoAdd->clear();
+    ui->txtDuoAdd2->clear();
+    ui->txtDuoAdd->setFocus();
+}
+
+void MainWindow::on_btnBuildTeams_clicked() {
+
+}
+
+void MainWindow::buildTeams() {
+
+}
