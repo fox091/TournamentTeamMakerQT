@@ -196,7 +196,7 @@
     <property name="title">
      <string>Team Results</string>
     </property>
-    <widget class="QListView" name="lbResults">
+    <widget class="QListWidget" name="lwResults">
      <property name="geometry">
       <rect>
        <x>10</x>

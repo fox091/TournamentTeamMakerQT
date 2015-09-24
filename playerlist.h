@@ -10,12 +10,14 @@ public:
     PlayerList();
     void AddSolo(QString pName);
     void AddDuo(QString pName, QString pName2);
+    int getTotalPlayers();
     QList<Player> BuildTeams(int teamSize);
 
 private:
     QList<Player> playerList;
     int soloCount;
     int duoCount;
+    int totalPlayers;
     void Shuffle(int teamSize);
     QList<Player> ReAddTeammates();
 };

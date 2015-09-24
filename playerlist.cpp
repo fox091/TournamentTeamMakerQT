@@ -6,17 +6,24 @@
 PlayerList::PlayerList() {
     soloCount = 0;
     duoCount = 0;
+    totalPlayers = 0;
+}
+
+int PlayerList::getTotalPlayers() {
+    return totalPlayers;
 }
 
 void PlayerList::AddSolo(QString pName) {
     playerList.append(*(new Player(NULL, pName, 1)));
     soloCount++;
+    totalPlayers++;
 }
 
 void PlayerList::AddDuo(QString pName, QString pName2) {
     Player* teammate = new Player(NULL, pName2, 0);
     playerList.append(*(new Player(teammate, pName, 2)));
     soloCount++;
+    totalPlayers += 2;
 }
 
 void PlayerList::Shuffle(int teamSize) {
@@ -30,7 +37,7 @@ void PlayerList::Shuffle(int teamSize) {
         while (n > 1)
         {
             n--;
-            int k = rand() * n;
+            int k = rand() % n;
             Player tempPlayer = playerList[k];
             playerList[k] = playerList[n];
             playerList[n] = tempPlayer;
@@ -42,7 +49,7 @@ void PlayerList::Shuffle(int teamSize) {
                 teamCount += p.getCount();
                 if (teamCount == teamSize)
                     teamCount = 0;
-                else
+                else if (teamCount > teamSize)
                     runAgain = true;
             }
         }

@@ -23,6 +23,14 @@ private slots:
 
     void on_btnBuildTeams_clicked();
 
+    void on_txtSoloAdd_returnPressed();
+
+    void on_txtDuoAdd_returnPressed();
+
+    void on_txtDuoAdd2_returnPressed();
+
+    void on_txtBuildTeams_returnPressed();
+
 private:
     Ui::MainWindow *ui;
     PlayerList pList;
