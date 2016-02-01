@@ -6,215 +6,155 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>471</width>
-    <height>320</height>
+    <width>951</width>
+    <height>565</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>Team Maker</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QGroupBox" name="gbSoloAdd">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>10</y>
-      <width>221</width>
-      <height>121</height>
-     </rect>
-    </property>
-    <property name="title">
-     <string>Add Solo</string>
-    </property>
-    <widget class="QLabel" name="lblSoloAdd">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>20</y>
-       <width>71</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Player Name: </string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="txtSoloAdd">
-     <property name="geometry">
-      <rect>
-       <x>90</x>
-       <y>20</y>
-       <width>113</width>
-       <height>20</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="btnSoloAdd">
-     <property name="geometry">
-      <rect>
-       <x>130</x>
-       <y>90</y>
-       <width>75</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Add</string>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QGroupBox" name="gbDuoAdd">
-    <property name="geometry">
-     <rect>
-      <x>240</x>
-      <y>10</y>
-      <width>221</width>
-      <height>121</height>
-     </rect>
-    </property>
-    <property name="title">
-     <string>Add Duo</string>
-    </property>
-    <widget class="QLabel" name="lblDuoAdd">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>20</y>
-       <width>71</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Player Name: </string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="txtDuoAdd">
-     <property name="geometry">
-      <rect>
-       <x>90</x>
-       <y>20</y>
-       <width>113</width>
-       <height>20</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="btnDuoAdd">
-     <property name="geometry">
-      <rect>
-       <x>130</x>
-       <y>90</y>
-       <width>75</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Add</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="txtDuoAdd2">
-     <property name="geometry">
-      <rect>
-       <x>90</x>
-       <y>50</y>
-       <width>113</width>
-       <height>20</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QLabel" name="lblDuoAdd2">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>50</y>
-       <width>71</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Player Name: </string>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QGroupBox" name="gbBuildTeams">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>140</y>
-      <width>221</width>
-      <height>121</height>
-     </rect>
-    </property>
-    <property name="title">
-     <string>Build Teams</string>
-    </property>
-    <widget class="QLabel" name="lblBuildTeams">
-     <property name="geometry">
-      <rect>
-       <x>20</x>
-       <y>20</y>
-       <width>71</width>
-       <height>16</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Team Size:</string>
-     </property>
-    </widget>
-    <widget class="QLineEdit" name="txtBuildTeams">
-     <property name="geometry">
-      <rect>
-       <x>90</x>
-       <y>20</y>
-       <width>113</width>
-       <height>20</height>
-      </rect>
-     </property>
-    </widget>
-    <widget class="QPushButton" name="btnBuildTeams">
-     <property name="geometry">
-      <rect>
-       <x>130</x>
-       <y>90</y>
-       <width>75</width>
-       <height>23</height>
-      </rect>
-     </property>
-     <property name="text">
-      <string>Build</string>
-     </property>
-    </widget>
-   </widget>
-   <widget class="QGroupBox" name="gbResults">
-    <property name="geometry">
-     <rect>
-      <x>240</x>
-      <y>140</y>
-      <width>221</width>
-      <height>121</height>
-     </rect>
-    </property>
-    <property name="title">
-     <string>Team Results</string>
-    </property>
-    <widget class="QListWidget" name="lwResults">
-     <property name="geometry">
-      <rect>
-       <x>10</x>
-       <y>20</y>
-       <width>201</width>
-       <height>91</height>
-      </rect>
-     </property>
-    </widget>
-   </widget>
+   <layout class="QGridLayout" name="gridLayout">
+    <item row="0" column="2" rowspan="2">
+     <widget class="QGroupBox" name="groupBox">
+      <property name="minimumSize">
+       <size>
+        <width>200</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="title">
+       <string>Current Players</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_6">
+       <item row="0" column="0">
+        <widget class="QListWidget" name="listWidget"/>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="1">
+     <widget class="QGroupBox" name="gbResults">
+      <property name="title">
+       <string>Team Results</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_5">
+       <item row="0" column="0">
+        <widget class="QListWidget" name="lwResults"/>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="1">
+     <widget class="QGroupBox" name="gbDuoAdd">
+      <property name="title">
+       <string>Add Duo</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_2">
+       <item row="0" column="0">
+        <widget class="QLabel" name="lblDuoAdd">
+         <property name="text">
+          <string>Player Name: </string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="txtDuoAdd"/>
+       </item>
+       <item row="1" column="0">
+        <widget class="QLabel" name="lblDuoAdd2">
+         <property name="text">
+          <string>Player Name: </string>
+         </property>
+        </widget>
+       </item>
+       <item row="1" column="1">
+        <widget class="QLineEdit" name="txtDuoAdd2"/>
+       </item>
+       <item row="2" column="1">
+        <widget class="QPushButton" name="btnDuoAdd">
+         <property name="text">
+          <string>Add</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="1" column="0">
+     <widget class="QGroupBox" name="gbBuildTeams">
+      <property name="title">
+       <string>Build Teams</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_4">
+       <item row="1" column="1">
+        <widget class="QPushButton" name="btnBuildTeams">
+         <property name="text">
+          <string>Build</string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="txtBuildTeams"/>
+       </item>
+       <item row="0" column="0">
+        <widget class="QLabel" name="lblBuildTeams">
+         <property name="text">
+          <string>Team Size:</string>
+         </property>
+        </widget>
+       </item>
+       <item row="2" column="1">
+        <spacer name="verticalSpacer">
+         <property name="orientation">
+          <enum>Qt::Vertical</enum>
+         </property>
+         <property name="sizeHint" stdset="0">
+          <size>
+           <width>20</width>
+           <height>40</height>
+          </size>
+         </property>
+        </spacer>
+       </item>
+      </layout>
+     </widget>
+    </item>
+    <item row="0" column="0">
+     <widget class="QGroupBox" name="gbSoloAdd">
+      <property name="title">
+       <string>Add Solo</string>
+      </property>
+      <layout class="QGridLayout" name="gridLayout_3">
+       <item row="0" column="0">
+        <widget class="QLabel" name="lblSoloAdd">
+         <property name="text">
+          <string>Player Name: </string>
+         </property>
+        </widget>
+       </item>
+       <item row="0" column="1">
+        <widget class="QLineEdit" name="txtSoloAdd"/>
+       </item>
+       <item row="1" column="1">
+        <widget class="QPushButton" name="btnSoloAdd">
+         <property name="text">
+          <string>Add</string>
+         </property>
+        </widget>
+       </item>
+      </layout>
+     </widget>
+    </item>
+   </layout>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>471</width>
-     <height>21</height>
+     <width>951</width>
+     <height>30</height>
     </rect>
    </property>
   </widget>
